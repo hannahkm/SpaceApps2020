@@ -13,8 +13,8 @@ bar_data <- rbind(t(f2019), t(f2020))
 colnames(bar_data) <- c("Jan", "Feb", "Mar", "Apr")
 rownames(bar_data) <- c("2019", "2020")
 
-barplot(as.matrix(bar_data), names.arg=colnames(bar_data), beside=T, main="Monthly Vegetation in Great Smoky Park", xlab="Month", ylab="Vegetation (unitless)", col=c("#566456", "#798878"))
-legend("topleft", inset=0.05,legend=c("2019", "2020"), col=c("#566456", "#798878"), pch=15, cex=0.8, bty="n", pt.cex=1.8)
+barplot(as.matrix(bar_data), names.arg=colnames(bar_data), beside=T, main="Monthly Vegetation in Great Smoky Park", xlab="Month", ylab="Vegetation (unitless)", col=c("#566456", "#9CAEA9"))
+legend("topleft",legend=c("2019", "2020"), col=c("#566456", "#9CAEA9"), pch=15, cex=0.8, bty="n", pt.cex=1.8)
 
 #Transpiration Data
 f2020 <- as.data.frame(read.csv("transpiration_2020.csv", header=TRUE, skip = 8))
@@ -41,5 +41,5 @@ for (i in c(1:5)){
   bar_data[2,i] <- sum(temp20[,2], na.rm=TRUE)/nrow(temp20)
 }
 
-barplot(as.matrix(bar_data), names.arg=colnames(bar_data), beside=T, main="Avg Monthly Transpiration in Great Smoky Park", xlab="Month", ylab="Transpiration (W/square meter)", col=c("#566456", "#798878"))
-legend("bottomleft", inset=0.05,legend=c("2019", "2020"), col=c("#566456", "#798878"), pch=15, cex=0.8, bty="n", pt.cex=1.8)
+barplot(as.matrix(bar_data), names.arg=colnames(bar_data), beside=T, main="Avg Monthly Transpiration in Great Smoky Park", xlab="Month", ylab="Transpiration (W/square meter)", col=c("#566456", "#9CAEA9"))
+legend("bottomleft", inset=0.05,legend=c("2019", "2020"), col=c("#566456", "#9CAEA9"), pch=15, cex=0.8, bty="n", pt.cex=1.8)

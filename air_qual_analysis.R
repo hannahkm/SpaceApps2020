@@ -32,21 +32,21 @@ f2020$NO2[f2020$NO2==-1.27e+30] <- NA
   
 #COMPARISON IN SCATTERPLOTS - ugly!!
 #compare aerosols
-plot(f2019[,1], type="p", col="red", xlab="Date", ylab="Aerosols (unitless)", main="Aerosols over Great Smoky Park")
-points(f2019[,2], col="red")
-points(f2020[,1], col="blue")
-legend("topright", legend=c("2019", "2020"), col=c("red", "blue"), lty=1, cex=0.8)
+plot(f2019[,1], type="p", col="#566456", xlab="Date", ylab="Aerosols (unitless)", main="Aerosols over Great Smoky Park", pch=16, cex=0.8)
+points(f2019[,2], col="#566456", pch=16, cex=0.8)
+points(f2020[,1], col="#9CAEA9", pch=16, cex=0.8)
+legend("topright", legend=c("2019", "2020"), col=c("#566456", "#9CAEA9"), lty=1, cex=0.8, lwd=2)
 axis(side=1, labels=rownames(f2019))
 
 #compare methane
-plot(f2019[,3], type="p", col="red", xlab="Date", ylab="Methane (ppbv)", main="Methane over Great Smoky Park")
-points(f2020[,3], col="blue")
-legend("topright", legend=c("2019", "2020"), col=c("red", "blue"), lty=1, cex=0.8)
+plot(f2019[,3], type="p", col="#566456", xlab="Date", ylab="Methane (ppbv)", main="Methane over Great Smoky Park", pch=16, cex=0.8)
+points(f2020[,3], col="#9CAEA9", pch=16, cex=0.8)
+legend("topleft", legend=c("2019", "2020"), col=c("#566456", "#9CAEA9"), lty=1, cex=0.8)
 
 #compare no2
-plot(f2019[,4], type="p", col="red", xlab="Date", ylab="NO2 (1/square cm)", main="NO2 over Great Smoky Park")
-points(f2020[,4], col="blue")
-legend("topright", legend=c("2019", "2020"), col=c("red", "blue"), lty=1, cex=0.8)
+plot(f2019[,4], type="p", col="#566456", xlab="Date", ylab="NO2 (1/square cm)", main="NO2 over Great Smoky Park", pch=16, cex=0.8)
+points(f2020[,4], col="#9CAEA9", pch=16, cex=0.8)
+legend("topright", legend=c("2019", "2020"), col=c("#566456", "#9CAEA9"), lty=1, cex=0.8)
 
 ###########################################################
 ##Using bar graphs to compare averages in 2019/2020 by month
@@ -75,11 +75,11 @@ for (i in c(1:5)){
   no2[2,i] <- sum(temp20[,4], na.rm=TRUE)/nrow(temp20)
 }
 
-barplot(as.matrix(aero), names.arg=colnames(aero), beside=T, main="Average Aerosol Levels in Great Smoky Park", xlab="Month", ylab="Aerosols (no units)", col=c("#566456", "#798878"))
-legend("topleft", inset=0.05,legend=c("2019", "2020"), col=c("#566456", "#798878"), pch=15, cex=0.8, bty="n", pt.cex=1.8)
+barplot(as.matrix(aero), names.arg=colnames(aero), beside=T, main="Average Aerosol Levels in Great Smoky Park", xlab="Month", ylab="Aerosols (no units)", col=c("#566456", "#9CAEA9"))
+legend("topleft", inset=0.05,legend=c("2019", "2020"), col=c("#566456", "#9CAEA9"), pch=15, cex=0.8, bty="n", pt.cex=1.8)
 
-barplot(as.matrix(no2), names.arg=colnames(no2), beside=T, main="Average NO2 Levels in Great Smoky Park", xlab="Month", ylab="NO2 (1/square cm)", col=c("#566456", "#798878"))
-legend("topright",legend=c("2019", "2020"), col=c("#566456", "#798878"), pch=15, cex=0.8, bty="n", pt.cex=1.8)
+barplot(as.matrix(no2), names.arg=colnames(no2), beside=T, main="Average NO2 Levels in Great Smoky Park", xlab="Month", ylab="NO2 (1/square cm)", col=c("#566456", "#9CAEA9"))
+legend("topright",legend=c("2019", "2020"), col=c("#566456", "#9CAEA9"), pch=15, cex=0.8, bty="n", pt.cex=1.8)
 
 
 
