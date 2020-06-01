@@ -1,0 +1,13 @@
+Title:,"Time Series, Area-Averaged of CMG 0.05 Deg Monthly NDVI monthly 0.05 deg. [MODIS-Aqua ()"
+User Start Date:,2020-01-01T00:00:00Z
+User End Date:,2020-04-30T23:59:59Z
+User Bounding Box:,"-84.9463,34.0137,-81.123,36.6504"
+Data Bounding Box:,"-84.925,34.025,-81.125,36.625"
+URL to Reproduce Results:,"https://giovanni.gsfc.nasa.gov/giovanni/#service=ArAvTs&starttime=2020-01-01T00:00:00Z&endtime=2020-04-30T23:59:59Z&bbox=-84.9463,34.0137,-81.123,36.6504&data=MYD13C2_006_CMG_0_05_Deg_Monthly_NDVI&variableFacets=dataFieldMeasurement%3AVegetation%3B&portal=GIOVANNI&format=json"
+Fill Value (mean_MYD13C2_006_CMG_0_05_Deg_Monthly_NDVI):, -3000
+
+time, mean_MYD13C2_006_CMG_0_05_Deg_Monthly_NDVI
+2020-01-01 00:00:00,0.54147619
+2020-02-01 00:00:00,0.535668314
+2020-03-01 00:00:00,0.555955887
+2020-04-01 00:00:00,0.64623791
