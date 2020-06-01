@@ -4,7 +4,7 @@ We are a group of five students looking to make a change and help our planet. We
 
 Due to COVID-19, many national parks were closed to help prevent the spread of the virus. This resulted in a significant decrease in the number of visitors at major national parks across the country compared to previous years. Using data provided by NASA's Giovanni and the US Geology Study, we aimed to identify any differences, whether positive or negative, in the environment between 2019 and 2020.
 
-Want to learn more? Come see our [website!](covidearthinitiative.us)
+Want to learn more? Come see our [website!](https://covidearthinitiative.us/index.html)
 
 ### What data did we use?
 * [NASA's Giovanni Web Interface](https://giovanni.gsfc.nasa.gov/giovanni/): data about the optical depth of aerosols, amount of nitrogen dioxide and methane in the atmosphere, transpiration of plants, and vegetation. Area was specificed to be over the Great Smoky National Park in Tennessee and North Carolina.
